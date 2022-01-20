@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body>
+
+    <%- include('./partials/bootstrap-navbar.ejs'); %>
+
+        <!--
+    <div class="head-bar">
+      <img src="/img/jukebox2.png">
+    </div>
+    -->
+
+        <!--
+    <div class="login-form">
+      <form>
+        <h1>Login</h1>
+        <a href="/auth/spotify">Sign in with Spotify</a>
+      </form>
+    </div>
+    -->
+
+        <form class="form-signin" method="post" action="/venue/create">
+            <!-- <img class="mb-4" src="/img/yeahboy.jpg" alt="" width="72" height="72"> -->
+            <input type="text" name="venue_name" placeholder="Venue name"/>
+            <!-- <input type="text" name="venue_location" placeholder="Zipcode" /> -->
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Add a Venue</button>
+        </form>
+
+        <%- include('./partials/bootstrap-footer.ejs'); %>
+
+        <%- include('./partials/bootstrap-js.ejs'); %>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head'); %>
+</head>
+<body>
+    <%- include('./partials/bootstrap-navbar.ejs'); %>
+    
+    <!-- Main App View -->
+
+    <div id="app"></div>
+
+    <%- include('./partials/bootstrap-footer.ejs'); %>
+
+    <!-- I added the bootstrap js here -Sam -->
+    <%- include('./partials/bootstrap-js.ejs'); %>
+    <script type="module" src="/js/venue.js"></script>
+</body>
+</html>

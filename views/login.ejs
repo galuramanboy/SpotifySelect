@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head'); %>
+</head>
+
+<body>
+  
+    <%- include('./partials/bootstrap-login-navbar.ejs'); %>
+
+    <!--
+    <div class="head-bar">
+      <img src="/img/jukebox2.png">
+    </div>
+    -->
+
+    <!--
+    <div class="login-form">
+      <form>
+        <h1>Login</h1>
+        <a href="/auth/spotify">Sign in with Spotify</a>
+      </form>
+    </div>
+    -->
+
+    <form class="form-signin" action="/auth/spotify">
+      <!-- <img class="mb-4" src="/img/yeahboy.jpg" alt="" width="72" height="72"> -->
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in with Spotify</button>
+    </form>
+
+    <%- include('./partials/bootstrap-footer.ejs'); %>
+
+    <%- include('./partials/bootstrap-js.ejs'); %>
+</body>
+
+</html>
